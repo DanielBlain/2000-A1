@@ -1,12 +1,12 @@
 body {
-    background: linear-gradient(#39c5fd, #e2f5ff);
+    background: linear-gradient(orange, darkorange);
     color: rgb(12, 72, 105);
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: small;
     font-weight: bold;
     margin: 0;

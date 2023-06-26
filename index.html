@@ -34,12 +34,12 @@
                     </div>
                     <h2>Account Info</h2>
                 </legend>
-                <label for="name-entry">Name</label>
-                <input type="text" name="name-entry" id="name-entry" required />
-                <label for="email-entry">Email</label>
-                <input type="email" name="email-entry" id="email-entry" required />
-                <label for="password-entry">Password</label>
-                <input type="password" name="password-entry" id="password-entry" required />
+                <label for="name-entry" class="visually-hidden">Name</label>
+                <input type="text" name="name-entry" id="name-entry" placeholder="Name" required />
+                <label for="email-entry" class="visually-hidden">Email</label>
+                <input type="email" name="email-entry" id="email-entry" placeholder="Email" required />
+                <label for="password-entry" class="visually-hidden">Password</label>
+                <input type="password" name="password-entry" id="password-entry" placeholder="Password" required />
             </fieldset>
 
             <fieldset>
@@ -51,19 +51,55 @@
                     </div>
                     <h2>Dev Skills</h2>
                 </legend>
-                <div class="group-title">
-                    Programming Languages
+                <div class="grid-3">
+                    <div class="grid-header group-title">
+                        Programming Languages
+                    </div>
+                    <div class="grid-entry">
+                        <input type="checkbox" name="skills-chk" id="chk-html" value="HTML" />
+                        <label for="chk-html">HTML</label>
+                    </div>
+                    <div class="grid-entry">
+                        <input type="checkbox" name="skills-chk" id="chk-css" value="CSS" />
+                        <label for="chk-css">CSS</label>
+                    </div>
+                    <div class="grid-entry">
+                        <input type="checkbox" name="skills-chk" id="chk-sass" value="Sass" />
+                        <label for="chk-sass">Sass</label>
+                    </div>
+                    <div class="grid-entry">                        
+                        <input type="checkbox" name="skills-chk" id="chk-javascript" value="JavaScript" />
+                        <label for="chk-javascript">JavaScript</label>
+                    </div>
+                    <div class="grid-entry">
+                        <input type="checkbox" name="skills-chk" id="chk-php" value="PHP" />
+                        <label for="chk-php">PHP</label>
+                    </div>
+                    <div class="grid-entry">
+                        <input type="checkbox" name="skills-chk" id="chk-python" value="Python" />
+                        <label for="chk-php">Python</label>
+                    </div>
+                    <div class="grid-header group-title">
+                        Dev Ops
+                    </div>
+                    <div class="grid-entry">
+                        <input type="checkbox" name="skills-chk" id="chk-git" value="GIT" />
+                        <label for="chk-git">GIT</label>
+                    </div>
+                    <div class="grid-entry">
+                        <input type="checkbox" name="skills-chk" id="chk-gulp" value="Gulp" />
+                        <label for="chk-gulp">Gulp</label>
+                    </div>
+                    <div class="grid-entry">
+                        <input type="checkbox" name="skills-chk" id="chk-webpack" value="Webpack" />
+                        <label for="chk-webpack">Webpack</label>
+                    </div>
                 </div>
-                <input type="checkbox" name="skills-chk" id="chk-html" value="HTML" />
-                <label for="chk-html">HTML</label>
-                <input type="checkbox" name="skills-chk" id="chk-css" value="CSS" />
-                <label for="chk-css">CSS</label>
-                <input type="checkbox" name="skills-chk" id="chk-javascript" value="JavaScript" />
-                <label for="chk-javascript">JavaScript</label>
-                <input type="checkbox" name="skills-chk" id="chk-php" value="PHP" />
-                <label for="chk-php">PHP</label>
             </fieldset>
 
+            <!--
+                - Adjust styling of checkboxes to ensure 3 columns 
+            -->
             <fieldset>
                 <legend>
                     <div class="numbering-circle">

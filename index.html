@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link font "Josefin Slab", regular(400) and bold, from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link my style sheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <!-- Link jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+
+    <!-- Link my script -->
+    <script src="./scripts/script.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <section id="user-details-page">
+        <form id="user-details-form" method="post" action="index.html" onsubmit="">
+            <h1>Signup</h1>
+
+            <fieldset>
+                <legend>
+                    <div class="numbering-circle">
+                        <span class="numbering-label">
+                            1
+                        </span>
+                    </div>
+                    <h2>Account Info</h2>
+                </legend>
+                <label for="name-entry">Name</label>
+                <input type="text" name="name-entry" id="name-entry" required />
+                <label for="email-entry">Email</label>
+                <input type="email" name="email-entry" id="email-entry" required />
+                <label for="password-entry">Password</label>
+                <input type="password" name="password-entry" id="password-entry" required />
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <div class="numbering-circle">
+                        <span class="numbering-label">
+                            2
+                        </span>
+                    </div>
+                    <h2>Dev Skills</h2>
+                </legend>
+                <div class="group-title">
+                    Programming Languages
+                </div>
+                <input type="checkbox" name="skills-chk" id="chk-html" value="HTML" />
+                <label for="chk-html">HTML</label>
+                <input type="checkbox" name="skills-chk" id="chk-css" value="CSS" />
+                <label for="chk-css">CSS</label>
+                <input type="checkbox" name="skills-chk" id="chk-javascript" value="JavaScript" />
+                <label for="chk-javascript">JavaScript</label>
+                <input type="checkbox" name="skills-chk" id="chk-php" value="PHP" />
+                <label for="chk-php">PHP</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <div class="numbering-circle">
+                        <span class="numbering-label">
+                            3
+                        </span>
+                    </div>
+                    <h2>Experience</h2>
+                </legend>
+                <div class="group-title">
+                    Overall Experience
+                </div>
+                <input type="radio" name="experience-radio" id="radio-beginner" value="Beginner" />
+                <label for="radio-beginner">Beginner</label>
+                <input type="radio" name="experience-radio" id="radio-intermediate" value="Intermediate" />
+                <label for="radio-intermediate">Intermediate</label>
+                <input type="radio" name="experience-radio" id="radio-advanced" value="Advanced" />
+                <label for="radio-advanced">Advanced</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <div class="numbering-circle">
+                        <span class="numbering-label">
+                            4
+                        </span>
+                    </div>
+                    <h2>Other</h2>
+                </legend>
+                <label for="how-did-you-hear-entry">How did you hear about us?</label>
+                <select name="select-how-did-you-hear-entry" id="select-how-did-you-hear-entry">
+                    <option value="">Please Select..</option>
+                    <optgroup label="Person">
+                        <option value="opt-family">Family</option>
+                        <option value="opt-friend">Friend</option>
+                        <option value="opt-colleague">Colleague</option>
+                    </optgroup>
+                    <optgroup label="Media">
+                        <option value="opt-internet">Internet</option>
+                        <option value="opt-radio">Radio</option>
+                        <option value="opt-tv">TV</option>
+                        <option value="opt-newspaper">Newspaper</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="opt-magic" id="opt-magic">Magic!</option>
+                        <option value="opt-other" id="opt-other">Other..</option>
+                    </optgroup>
+                </select>
+                <label for="details-entry" id="details-label" class="how-did-you-hear" hidden>Details, please..</label>
+                <input type="text" name="details-entry" id="details-entry" class="how-did-you-hear" placeholder="Do tell" hidden/>
+                <label for="area-comments">Comments</label>
+                <textarea name="area-comments" id="area-comments" cols="30" rows="4"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Go" />
+            <input type="reset" value="Clear Form" />
+        </form>
+    </section>
+</body>
+</html>

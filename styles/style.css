@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(#39c5fd, #e2f5ff);
+    color: rgb(12, 72, 105);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Josefin Slab', serif;
+    font-size: small;
+    font-weight: bold;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: x-large;
+    text-decoration: underline;
+    text-shadow: .1rem .1rem .25rem #999;
+}
+
+h2 {
+    font-size: medium;
+    display: inline-block;
+}
+
+:focus {
+    outline-color: rgb(49, 201, 118);
+}
+
+div.group-title {
+    margin-bottom: .3rem;
+}
+
+#user-details-page {
+    font-family: 'Josefin Slab', serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+#user-details-form {
+    margin: 2rem 2rem 4rem;
+    padding: 1rem 1.3rem 2rem;
+    border-radius: .5rem;
+    background-color: white;
+    box-shadow: 4px 4px 8px 4px black;
+    /* offx offy blur spread-rad color */
+}
+
+fieldset {
+    margin-bottom: 1.4rem;
+    padding: 0;
+    position: relative; /* To allow children to position */
+    border: none;
+    border-top: solid 1px black;
+}
+
+legend {
+    margin-left: 1rem;
+    margin-bottom: .4rem;
+    padding-right: .4rem;
+}
+
+legend .numbering-circle {
+    margin-left: .3rem;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: rgb(49, 201, 118);
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    position: relative;
+    bottom: .3rem;
+}
+
+legend .numbering-label {
+    font-size: smaller;
+    position: relative;
+    top: .3rem;
+}
+
+input:focus {
+    background-color: red;
+    border: solid 3px red;
+}
+
+::placeholder,
+fieldset input[type=text],
+fieldset input[type=email],
+fieldset input[type=password],
+fieldset select,
+fieldset textarea {
+    margin-bottom: .3rem;
+    padding: .5rem .3rem;
+    border: none;
+    font-family: 'Josefin Slab', serif;
+    background-color: rgb(211, 227, 227);
+    width: 100%;
+    opacity: .5;
+}
+
+fieldset label {
+    margin-right: 1.4rem;
+}
+
+fieldset input[type=checkbox],
+fieldset input[type=radio] {
+    margin: 0;
+    position: relative;
+    top: .1rem;
+}
+
+fieldset select,
+form input[type=submit],
+form input[type=reset] {
+    width: 100%;
+    padding: .4rem 0;
+    border-radius: 3px;
+    font-family: 'Josefin Slab', serif;
+    border: solid 1px rgb(211, 227, 227);
+}
+
+input[type=submit] {
+    background-color: rgb(49, 201, 118);
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+input[type=reset] {
+    background-color: transparent;
+}
+

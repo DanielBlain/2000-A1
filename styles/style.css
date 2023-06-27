@@ -9,11 +9,9 @@ h3 {
     font-family: 'Roboto Slab', serif;
     font-size: small;
     font-weight: bold;
-    margin: 0;
 }
 
 h1 {
-    margin-bottom: 1rem;
     font-size: x-large;
     text-decoration: underline;
     text-shadow: .1rem .1rem .25rem #999;
@@ -25,7 +23,6 @@ h2 {
 }
 
 div.group-title {
-    margin-bottom: .3rem;
 }
 
 .grid-3 {
@@ -33,9 +30,12 @@ div.group-title {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-3 > * {
+    margin-bottom: .3rem;
+}
+
 .grid-header {
     grid-column: span 3;
-    margin-top: 1rem;
     font-weight: bold;
 }
 
@@ -45,8 +45,8 @@ div.group-title {
 }
 
 #user-details-form {
-    margin: 2rem 2rem 4rem;
-    padding: 1rem 1.3rem 2rem;
+    margin: .4rem 2rem 8rem;
+    padding: .4rem 1.3rem 2rem;
     border-radius: .5rem;
     background-color: white;
     box-shadow: 4px 4px 8px 4px black;
@@ -54,24 +54,22 @@ div.group-title {
 }
 
 fieldset {
-    margin-bottom: 1.4rem;
     padding: 0;
     position: relative; /* To allow children to position */
     border: none;
-    border-top: solid 1px black;
+    border-top: solid 2px black;
 }
 
 legend {
-    margin-left: 1rem;
-    margin-bottom: .4rem;
+    margin-left: .5rem;
     padding-right: .4rem;
 }
 
 legend .numbering-circle {
-    margin-left: .3rem;
     display: inline-block;
     width: 1.4rem;
     height: 1.4rem;
+    margin: .3rem;
     background-color: rgb(12, 72, 105);
     color: white;
     text-align: center;
@@ -92,7 +90,7 @@ fieldset input[type=email],
 fieldset input[type=password],
 fieldset select,
 fieldset textarea {
-    margin-bottom: .3rem;
+    margin-bottom: .2rem;
     padding: .5rem .3rem;
     border: none;
     font-family: 'Roboto Slab', serif;
@@ -131,10 +129,9 @@ form input[type=reset] {
 }
 
 input[type=submit] {
+    margin-bottom: 2rem;
     background-color: rgb(12, 72, 105);
     color: white;
-    margin-top: .3rem;
-    margin-bottom: 1rem;
     border: none;
 }
 

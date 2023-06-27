@@ -1,11 +1,11 @@
 body {
-    background: linear-gradient(orange, darkorange);
-    color: rgb(12, 72, 105);
+    background: linear-gradient(rgb(255, 200, 97), rgb(234, 62, 0));
 }
 
 h1,
 h2,
 h3 {
+    color: rgb(12, 72, 105);
     font-family: 'Roboto Slab', serif;
     font-size: small;
     font-weight: bold;
@@ -24,10 +24,6 @@ h2 {
     display: inline-block;
 }
 
-:focus {
-    outline-color: rgb(49, 201, 118);
-}
-
 div.group-title {
     margin-bottom: .3rem;
 }
@@ -40,12 +36,12 @@ div.group-title {
 .grid-header {
     grid-column: span 3;
     margin-top: 1rem;
+    font-weight: bold;
 }
 
 #user-details-page {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: small;
-    font-weight: bold;
 }
 
 #user-details-form {
@@ -76,26 +72,21 @@ legend .numbering-circle {
     display: inline-block;
     width: 1.4rem;
     height: 1.4rem;
-    background-color: rgb(49, 201, 118);
+    background-color: rgb(12, 72, 105);
     color: white;
     text-align: center;
     border-radius: 100px;
     position: relative;
-    bottom: .3rem;
+    bottom: .1rem;
 }
 
 legend .numbering-label {
     font-size: smaller;
     position: relative;
-    top: .3rem;
+    top: .05rem;
+    left: .025rem;
 }
 
-input:focus {
-    background-color: red;
-    border: solid 3px red;
-}
-
-::placeholder,
 fieldset input[type=text],
 fieldset input[type=email],
 fieldset input[type=password],
@@ -104,10 +95,18 @@ fieldset textarea {
     margin-bottom: .3rem;
     padding: .5rem .3rem;
     border: none;
-    font-family: 'Josefin Slab', serif;
-    background-color: rgb(211, 227, 227);
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(231, 235, 235);
     width: 100%;
-    opacity: .5;
+}
+
+fieldset input[type=text]:focus,
+fieldset input[type=email]:focus,
+fieldset input[type=password]:focus,
+fieldset select:focus,
+fieldset textarea:focus {
+    outline-color: rgb(255, 200, 97);
+    background-color: white;
 }
 
 fieldset label {
@@ -127,19 +126,21 @@ form input[type=reset] {
     width: 100%;
     padding: .4rem 0;
     border-radius: 3px;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Roboto Slab', serif;
     border: solid 1px rgb(211, 227, 227);
 }
 
 input[type=submit] {
-    background-color: rgb(49, 201, 118);
+    background-color: rgb(12, 72, 105);
+    color: white;
     margin-top: .3rem;
     margin-bottom: 1rem;
     border: none;
 }
 
 input[type=reset] {
-    background-color: transparent;
+    background-color: white;
+    color: rgb(234, 62, 0);
 }
 
 .visually-hidden {

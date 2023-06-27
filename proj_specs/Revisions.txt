@@ -1,0 +1,44 @@
+The client reviewed our signup form and has requested some last minute changes.
+
+Change the overall colour scheme towards a sunset theme
+Dark orange at the bottom of the page, orange-yellow at the top
+Focused form inputs should have a 3px border in the same orange-yellow as the top of the gradient.  Background should be white (when focused)  
+Number circles and submit button should be white text on dark blue bg
+Reset button should be dark orange text on white bg
+Change font to Roboto Slab
+Visually hide labels for account info fields.  Add descriptive placeholders.
+Add checkboxes for Sass and Python under Programming Languages and add a new subheading, DevOps, with checkboxes for GIT, Gulp, and Webpack.  Also, make sure these line up neatly in 3 column rows.
+
+_______________________________________________
+
+You can either work solo or with a partner on revising your code and resubmitting assignment 01.  Either way, I would like you to:
+
+* Create a git repo from your initial version of Assignment 01 (choose whichever partner's work seems most complete).  This should be your main branch.
+
+* Before making any code changes, create a new branch called blue-master-archive.  This can be a handy way to create snapshots from a point in time without having to check out specific commits.
+
+ ================
+* Create 2 new branches (from main) 
+
+	i) sunset-theme ================
+
+	  - Change the colour scheme as described in previous slide and as closely matching the provided screenshot as possible.
+
+	  - Change the font-family to Roboto Slab (link from Google Fonts)
+
+	ii) form-revisions ================
+
+	  - Visually hide the account info labels and add placeholders
+
+	  - Add new checkboxes and DevOps subheading (these should still all be posted as a single checkbox grouping)
+
+	  - Adjust styling of checkboxes to ensure 3 columns
+
+ ================
+
+* Merge sunset-theme and form-revisions into main
+
+* Review your work, together, and add any additional commits on the main branch
+
+* Zip up your work, including the .git directory, and submit via Learning Hub (including a note as to who you worked with on this revision).
+

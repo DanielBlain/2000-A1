@@ -33,13 +33,13 @@ div.group-title {
 }
 
 .grid-3 {
-    background-color: red;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-header {
     grid-column: span 3;
+    margin-top: 1rem;
 }
 
 #user-details-page {

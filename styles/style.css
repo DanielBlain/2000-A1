@@ -32,6 +32,16 @@ div.group-title {
     margin-bottom: .3rem;
 }
 
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-header {
+    grid-column: span 3;
+    margin-top: 1rem;
+}
+
 #user-details-page {
     font-family: 'Josefin Slab', serif;
     font-size: small;
@@ -132,3 +142,14 @@ input[type=reset] {
     background-color: transparent;
 }
 
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
